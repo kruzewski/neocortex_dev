@@ -1,6 +1,5 @@
-<h1>Editing dashboard</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @dashboard %> |
-<%= link_to 'Back', dashboards_path %>
+<%- model_class = Dashboard -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Dashboard %></h1>
+</div>
+<%= render :partial => 'form' %>
