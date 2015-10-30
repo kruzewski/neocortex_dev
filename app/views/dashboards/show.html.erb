@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dashboard.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dashboard.description %>
+</p>
+
+<p>
+  <strong>Isactive:</strong>
+  <%= @dashboard.isactive %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @dashboard.url %>
+</p>
+
+<%= link_to 'Edit', edit_dashboard_path(@dashboard) %> |
+<%= link_to 'Back', dashboards_path %>
